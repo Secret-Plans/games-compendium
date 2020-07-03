@@ -1,0 +1,13 @@
+{
+    "cursor_colour": "green",
+    "controls": {
+        "left": "a",
+        "right": "d",
+        "up": "w",
+        "down": "s",
+        "uncover": "e",
+        "flag": "f",
+        "retry": "r",
+        "quit": "q"
+    }
+}

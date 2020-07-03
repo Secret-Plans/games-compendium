@@ -1,0 +1,65 @@
+Welcome to Minesweeper!
+
+Made by Damon Jones for 11PRG
+~~~
+==========
+  BASICS
+==========
+In
+Minesweeper you primary goal is to figure out where the mines are in a minefield without actually
+triggering any of them. The way you do can do this is by digging up tiles. All tiles will have a
+number that refers to how many mines are around them in the eight surrounding tiles. For example, in
+the picture below, there is one mine around the uncovered tile marked '1' and it could be in any of
+the spaces marked '?'.
+
+# # # # #
+# ? ? ? #
+# ? 1 ? #
+# ? ? ? #
+# # # # #
+
+Using this logic, you can
+identify where mines are based off of collections of numbers describing how many of them there are.
+~~~
+=================
+  THE INTERFACE
+=================
+
+. . . . . . . 1 | 1 . . . 1 # # # # # #
+. . . . . . 1 2 2 1 . . . 1 # # # # # #
+. . . . + . 1 | 1 . 1 1 1 1 # # # # # #
+. . . . . . 1 1 1 . 1 | # # # # # # # #
+. . . . . . . . . . 1 1 2 # # # # # # #
+. 1 2 3 2 1 . . . . . . 1 # # # # # # #
+. 1 | | | 1 1 1 1 . 1 1 3 # # # # # # #
+. 1 2 3 2 1 1 | 1 . 1 # # # # # # # # #
+. . . . . . 1 1 1 . 1 1 3 # # # # # # #
+. . . . . . . . . . . . 1 # # # # # # #
+
+Hovering Over: .
+
+This is the game
+interface. the block of tiles at the top denotes the game map. In it, covered tiles are represented
+as '#', and uncovered tiles are represented as the number of mines surrounding them. Tiles with zero
+mines around them are marked '.' and mines are denoted as'*', and ideally you won't have to prove
+that yourself. Flags are shown as '|'. The '+' refers to the cursor, or the location you are
+currently hovering over. The tile under the cursor can be seen under the map where it says "Hovering
+Over:". In this case the cursor is hovering over '.'.
+~~~
+============
+  CONTROLS
+============
+The
+default controls are as follows:
+-W to move upwards
+-A to move left
+-S to move downwards
+-D to move
+right
+-E to uncover a tile
+-F to place a flag on a tile
+-R to restart
+-Q to quit
+-` to open options
+All controls can be modified in the options menu or by directly editing settings.json, although the
+latter is not recommended.
